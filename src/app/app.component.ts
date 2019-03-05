@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ng-toggle-hide';
+   showMainContent: Boolean = true;
+
+  constructor() {}
+
+   ShowHideButton() {
+      this.showMainContent = this.showMainContent ? false : true;
+   }
 }
